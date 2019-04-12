@@ -1,8 +1,10 @@
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <head>
-    <link rel="stylesheet" type="text/css" href="Resources/style.css">
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
+</head>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
     <input type=hidden name="oid" value="00D1U000001BJqF">
     <input type=hidden name="retURL" value="https://www.instagram.com/athleticsforall/">
 
@@ -11,7 +13,7 @@
 
     <div class="form-container">
         <div class="header-box">
-            <h2>Tell me a little about yourself</h2>
+            <h2>Tell me about yourself</h2>
             <label for="first_name">First Name<input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /></label>
             <label for="last_name">Last Name<input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /></label>
             <label for="00N1U00000TKifE">Date of Birth<input  id="Date_of_Birth" maxlength="80" name="00N1U00000TKifE" size="20" type="date" oninput="setBackground2()" /></label>
@@ -29,7 +31,7 @@
         </div>
         <div class="header-box hidden" id="header-box3">
             <h4>What is your fitness goal?</h4>
-            <label>
+            <label class="fitness-goal-select">
                 <select  id="00N1U00000RpI8P" name="00N1U00000RpI8P" title="Fitness Goals">
                     <option value="">--None--</option><option value="Athlete Training">Athlete Training</option>
                     <option value="General Fitness">General Fitness</option>
@@ -44,28 +46,4 @@
             <input type="submit" name="submit" id="submit">
         </div>
     </div>
-
-    <script>
-        let setBackground2 = () => {
-            document.getElementById("background").classList.remove("background-1");
-            document.getElementById("background").classList.add("background-2");
-            
-            let showHeaderBox2 = setInterval(() => {
-                document.getElementById("header-box2").classList.remove("hidden");
-                clearInterval(showHeaderBox2);
-            }, 1000); 
-        }
-
-        let setBackground3 = () => {
-            document.getElementById("background").classList.remove("background-2");
-            document.getElementById("background").classList.add("background-3");
-            
-            let showHeaderBox3 = setInterval(() => {
-                document.getElementById("header-box3").classList.remove("hidden");
-                clearInterval(showHeaderBox3);
-            }, 1000); 
-        }
-    </script>
-    
-    </form>
-</head>
+</form>

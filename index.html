@@ -5,8 +5,8 @@
 </head>
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-    <input type=hidden name="oid" value="00D1U000001BJqF">
-    <input type=hidden name="retURL" value="https://www.instagram.com/athleticsforall/">
+    <input type=hidden name="oid" value="00D2E000000nAPB">
+    <input type=hidden name="retURL" value="https://www.instagram.com/athleticsforall/">    
 
     <div class="background-1" id="background">
     </div>
@@ -14,16 +14,16 @@
     <div class="form-container">
         <div class="header-box">
             <h2>Tell me about yourself</h2>
-            <label for="first_name">First Name<input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /></label>
-            <label for="last_name">Last Name<input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /></label>
-            <label for="00N1U00000TKifE">Date of Birth<input  id="Date_of_Birth" maxlength="80" name="00N1U00000TKifE" size="20" type="date" oninput="setBackground2()" /></label>
+            <label for="00N2E00000AHry7">Name<input  id="00N2E00000AHry7" maxlength="225" name="00N2E00000AHry7" size="30" type="text" /></label><br>
+           <span style="margin-left: -35px;"><label for="input_date">Date of Birth<input  id="input_date" maxlength="80" name="input_date" size="45" type="date" oninput="setBackground2()" onblur="setSfDate()" /></label></span><br>
+           <span class="dateInput dateOnlyInput hidden"><input  id="00N2E00000AHsDH" name="00N2E00000AHsDH" size="12" type="text" />
         </div>
         <div class="header-box hidden" id="header-box2">
             <h4>Contact Information</h4>
             <label for="email">Email<input  id="email" maxlength="80" name="email" size="25" type="email" /></label><br>
             <label for="phone">Phone<input  id="phone" maxlength="80" name="phone" size="25" type="tel" oninput="setBackground3()" /></label><br>
-            <label id="preferred-contact" for="00N1U00000TKj4i">Contact me by:
-                <select  id="00N1U00000TKj4i" name="00N1U00000TKj4i" title="Preferred Contact Method">
+            <label id="preferred-contact" for="00N2E00000AHsuk">Contact me by:
+                <select  id="00N2E00000AHsuk" name="00N2E00000AHsuk" title="Preferred Contact Method">
                     <option value="Phone">Phone</option>
                     <option value="Email">Email</option>
                 </select>
@@ -32,8 +32,9 @@
         <div class="header-box hidden" id="header-box3">
             <h4>What is your fitness goal?</h4>
             <label class="fitness-goal-select">
-                <select  id="00N1U00000RpI8P" name="00N1U00000RpI8P" title="Fitness Goals">
-                    <option value="">--None--</option><option value="Athlete Training">Athlete Training</option>
+                <select  id="00N2E00000AHsuQ" name="00N2E00000AHsuQ" title="Fitness Goals">
+                    <option value="">--None--</option>
+                    <option value="Athlete Training">Athlete Training</option>
                     <option value="General Fitness">General Fitness</option>
                     <option value="Recovery">Recovery</option>
                     <option value="Weight gainloss">Weight gain/loss</option>

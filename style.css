@@ -16,8 +16,8 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    width: 800px;
-    height: 300px;
+    width: 100%;
+    height: 15%;
     border-radius: 25%;
     border: 1px solid black;
     background-repeat: no-repeat;
@@ -35,8 +35,8 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 25%;
     border-radius: 25%;
     border: 1px solid black;
     -webkit-transition: height .5s ease-in; /* Safari */
@@ -55,8 +55,8 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    width: 800px;
-    height: 550px;
+    width: 100%;
+    height: 33%;
     border-radius: 25%;
     border: 1px solid black;
     -webkit-transition: height 1s ease-in; /* Safari */
